@@ -1,7 +1,0 @@
-print ("NEW DATA")
-print ("13 June")
-print ("14 June ")
-print ("25 June") 
-print ("27 June") 
-print ("28 June") 
-print ("1 July")
