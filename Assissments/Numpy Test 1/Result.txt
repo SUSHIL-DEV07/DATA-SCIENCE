@@ -1,0 +1,179 @@
+| Question |     Marks |
+| -------- | --------: |
+| Q1       | **10/10** |
+| Q2       |  **7/10** |
+| Q3       |  **8/10** |
+| Q4       | **10/10** |
+| Q5       | **10/10** |
+| Q6       | **10/10** |
+| Q7       |  **2/10** |
+| Q8       |  **9/10** |
+| Q9       |  **8/10** |
+| Q10      | **10/10** |
+
+📊 Final Score
+84 / 100
+🏅 Grade: A
+📈 Percentage: 84%
+Performance Breakdown
+
+🟢 Excellent
+
+Array Creation
+Array Operations
+Boolean Indexing
+Aggregation Functions
+Reshape
+
+🟡 Needs More Practice
+
+np.random.randint()
+np.where()
+np.sort()
+Row vs Column Indexing
+np.arange() end value (exclusive)
+Overall Feedback
+
+84/100 is a good score for a first self-assessment. It shows that your NumPy fundamentals are solid, but there are a few specific functions and indexing concepts that need more practice.
+
+If you spend 30–45 minutes revising the weak topics and solve another 15–20 practice questions, I would expect you to score around 90–95/100 on a similar test.
+
+Result: ✅ 84/100 (Grade A) 🎉
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bhai, maine tumhara pura test dobara review kiya. Tum Q2, Q3, Q7, Q8 aur Q9 me marks lose kiye the.
+
+❌ Q2 (7/10)
+🔴 Tumhara Code
+A = np.arange(1,20)
+
+print(A[0:5])
+print(A[(len(A)-6):])
+print(A[::2])
+❌ Mistakes
+np.arange(1,20) → 20 include nahi hota.
+len(A)-6 → Last 6 elements print honge, jabki question me last 5 puchhe the.
+✅ Correct Code
+A = np.arange(1,21)
+
+print(A[:5])
+print(A[-5:])
+print(A[::2])
+❌ Q3 (8/10)
+🔴 Tumhara Code
+A = np.arange(1,17)
+A = A.reshape(4,4)
+
+print(A)
+print(A[1])
+print(A[2])
+print(A[3,3])
+❌ Mistake
+
+Question tha:
+
+Print Third Column
+
+Tumne print kiya:
+
+print(A[2])
+
+Ye Third Row print karta hai.
+
+✅ Correct Code
+A = np.arange(1,17)
+A = A.reshape(4,4)
+
+print(A)
+print(A[1])      # Second Row
+print(A[:,2])    # Third Column
+print(A[3,3])    # Last Element
+❌ Q7 (2/10)
+🔴 Tumhara Code
+A = np.random(20,10,100)
+❌ Mistake
+
+np.random() naam ka function is tarah use nahi hota.
+
+✅ Correct Code
+A = np.random.randint(10,100,20)
+
+print(A)
+print(np.max(A))
+print(np.min(A))
+print(np.mean(A))
+❌ Q8 (9/10)
+🔴 Tumhara Code
+A = np.array([10,15,20,25,30,35,40])
+
+cond = A > 25
+A[cond] = 999
+
+A
+❌ Mistake
+
+Output sahi tha.
+
+Lekin question me np.where() use karne ko bola tha.
+
+✅ Correct Code
+A = np.array([10,15,20,25,30,35,40])
+
+A = np.where(A > 25,999,A)
+
+print(A)
+❌ Q9 (8/10)
+🔴 Tumhara Code
+A = np.array([5,2,8,2,9,1,5,6,8])
+
+print(np.unique(A))
+❌ Mistake
+
+Question me do cheeze puchhi thi.
+
+Sort
+Unique
+
+Tumne sirf Unique kiya.
+
+✅ Correct Code
+A = np.array([5,2,8,2,9,1,5,6,8])
+
+print(np.sort(A))
+print(np.unique(A))
+📋 Summary
+Question	Mistake	Lost Marks
+Q2	arange() end value, last 5 slicing	3
+Q3	Row aur Column me confusion	2
+Q7	np.random.randint() bhool gaye	8
+Q8	np.where() use nahi kiya	1
+Q9	np.sort() miss kiya	2
+🎯 Sirf Ye 5 Topics Revise Kar Lo
+np.arange()
+np.random.randint()
+np.where()
+np.sort()
+Row vs Column Indexing
+
+
+
+
+
+
+
+
+
+
+
+
